@@ -104,7 +104,7 @@
         consectetur tempore voluptate quia. Quia cum corporis reprehenderit esse dolores eos quibusdam magnam
         illo at quos.</p>
       <p class="text-black-50"><i>Send an email. All fields with an * are required</i></p>
-      <form action="#" method="post" class="text-black-50" onsubmit="onsubmit(event)">
+      <form action="#" method="post" class="text-black-50" onsubmit="onclick(event)">
         <div class="row">
           <div class="col-lg-4 col-md-6 col-sm-12">
             <div class="mb-3">
@@ -287,7 +287,7 @@
       location.reload();
     }
 
-    function onsubmit(e) {
+    function onClick(e) {
       e.preventDefault();
       grecaptcha.enterprise.ready(function () {
         grecaptcha.enterprise.execute('6Lcs4kkrAAAAAM4DMonIt6I2LVRLhqTWpecUMqt-', {
@@ -355,7 +355,7 @@
 
       const loginForm = document.getElementById('formLogin');
       if (loginForm) {
-        loginForm.addEventListener('submit', handleUserLogin);
+        loginForm.addEventListener('click', handleUserLogin);
       }
 
       const logoutLinks = document.querySelectorAll(".linkLogout");
@@ -368,7 +368,7 @@
       const headerKeywordInput = document.getElementById('keyword');
 
       if (headerSearchForm && headerKeywordInput) {
-        headerSearchForm.addEventListener('submit', function (event) {
+        headerSearchForm.addEventListener('click', function (event) {
           event.preventDefault();
           const keyword = headerKeywordInput.value.trim();
           if (keyword) {
