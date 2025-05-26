@@ -1,0 +1,429 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>20810026 - Web1 Project</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/686ae184f2.js" crossorigin="anonymous"></script>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+
+  <link rel="stylesheet" href="css/20810026.css" />
+  <style>
+    #banner-small {
+      min-height: 250px;
+      width: 100%;
+      background-color: #e9ecef;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center;
+    }
+
+    #banner-small h1 {
+      color: #ffffff;
+      margin-bottom: 0.75rem;
+    }
+
+    #banner-small p {
+      color: #ffffff;
+      font-size: 1.2rem;
+      max-width: 750px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .blockquote-footer {
+      background-color: #ffffff;
+      font-size: 0.9rem;
+      color: #ffffff;
+    }
+
+    h2,
+    h3 {
+      font-family: 'Trebuchet MS', Arial, Helvetica, sans-serif;
+      color: #333;
+      margin-bottom: 1rem;
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <header class="container">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Web1 Logo">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu-header"
+          aria-controls="menu-header" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-header">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">Home</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="about.html" aria-current="page">About
+                <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link linkLogin" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+              <a class="nav-link linkLogout" href="#" style="display: none;">Logout</a>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0 border rounded-pill header-search-form" id="form-search" method="GET"
+            action="search.html">
+            <input class="form-control border-0 ms-3" type="text" placeholder="Search" name="keyword" id="keyword"
+              required />
+            <button class="btn my-2 my-sm-0" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section id="banner-small">
+    <div class="container">
+      <h1 class="display-4">About Us</h1>
+      <p class="lead">Delve into our company's journey, our core values, and meet the passionate individuals driving our
+        success.</p>
+    </div>
+  </section>
+  <div id="content">
+    <section class="container py-5">
+      <div class="row">
+        <div class="col-md-8 col-sm-12" id="about-us-template"></div>
+        <div class="col-md-4 col-sm-12" id="our-vision-template"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="testimonials-template"></div>
+      </div>
+      <div class="row">
+        <div class="col-md-12" id="our-team-template"></div>
+      </div>
+    </section>
+  </div>
+
+  <div id="main">
+    <section class="container py-5">
+      <div class="row">
+        <div class="col-md-8 col-sm-12" id="about-us">
+          <h2>Về Chúng Tôi</h2>
+          <p>Đây là nơi bạn giới thiệu về công ty, dự án hoặc bản thân. Ví dụ: Chúng tôi là một đội ngũ đam mê với công
+            nghệ và luôn nỗ lực mang đến những giải pháp sáng tạo cho khách hàng. Với nhiều năm kinh nghiệm trong lĩnh
+            vực phát triển web, chúng tôi tự tin vào khả năng đáp ứng mọi yêu cầu của bạn.</p>
+          <p>Bạn có thể chia sẻ thêm về lịch sử hình thành, giá trị cốt lõi, hoặc những thành tựu nổi bật.</p>
+          <a href="about.html" class="btn btn-primary mt-2">Tìm hiểu thêm</a>
+        </div>
+        <div class="col-md-4 col-sm-12" id="our-vision">
+          <h3>Tầm Nhìn Của Chúng Tôi</h3>
+          <p>Mô tả tầm nhìn dài hạn của bạn ở đây. Ví dụ: Trở thành đơn vị hàng đầu trong việc cung cấp các giải pháp
+            web toàn diện, giúp doanh nghiệp chuyển đổi số thành công và phát triển bền vững.</p>
+          <ul class="list-unstyled">
+            <li><i class="fas fa-check-circle text-success me-2"></i>Đổi mới không ngừng</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Chất lượng vượt trội</li>
+            <li><i class="fas fa-check-circle text-success me-2"></i>Khách hàng là trung tâm</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container-fluid bg-light py-5" id="testimonials">
+      <div class="container">
+        <h2 class="text-center mb-4" style="font-family:Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;">
+          Khách Hàng Nói Gì Về Chúng Tôi</h2>
+        <div class="row">
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <p class="card-text">"Dịch vụ tuyệt vời! Tôi rất hài lòng với sản phẩm cuối cùng. Đội ngũ chuyên nghiệp
+                  và nhiệt tình."</p>
+                <footer class="blockquote-footer">Anh A, <cite title="Source Title">Công ty X</cite></footer>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <p class="card-text">"Giải pháp của họ đã giúp chúng tôi tối ưu hóa quy trình làm việc và tăng trưởng
+                  doanh thu đáng kể."</p>
+                <footer class="blockquote-footer">Chị B, <cite title="Source Title">Doanh nghiệp Y</cite></footer>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-4">
+            <div class="card mb-3">
+              <div class="card-body">
+                <p class="card-text">"Hỗ trợ nhanh chóng và hiệu quả. Tôi chắc chắn sẽ tiếp tục hợp tác trong tương
+                  lai."</p>
+                <footer class="blockquote-footer">Ông C, <cite title="Source Title">Tổ chức Z</cite></footer>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="our-team" class="container py-5">
+      <h2 class="text-center mb-5">Đội Ngũ Của Chúng Tôi</h2>
+      <div class="row text-center">
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img src="images/our-team/team-1.jpg" alt="Thành viên đội 1" class="img-fluid rounded-circle mb-3"
+            style="width: 150px; height: 150px; object-fit: cover;">
+          <h5>Nguyễn Văn A</h5>
+          <p class="text-muted">Trưởng Nhóm Phát Triển</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img src="images/our-team/team-2.jpg" alt="Thành viên đội 2" class="img-fluid rounded-circle mb-3"
+            style="width: 150px; height: 150px; object-fit: cover;">
+          <h5>Trần Thị B</h5>
+          <p class="text-muted">Chuyên Viên Thiết Kế</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img src="images/our-team/team-3.jpg" alt="Thành viên đội 3" class="img-fluid rounded-circle mb-3"
+            style="width: 150px; height: 150px; object-fit: cover;">
+          <h5>Lê Văn C</h5>
+          <p class="text-muted">Lập Trình Viên Backend</p>
+        </div>
+        <div class="col-lg-3 col-md-6 mb-4">
+          <img src="images/our-team/team-4.jpg" alt="Thành viên đội 4" class="img-fluid rounded-circle mb-3"
+            style="width: 150px; height: 150px; object-fit: cover;">
+          <h5>Phạm Thị D</h5>
+          <p class="text-muted">Chuyên Viên Marketing</p>
+        </div>
+      </div>
+    </section>
+  </div>
+  <main></main>
+  <footer class="text-center container-fluid text-white py-3" id="menu-footer">
+    <ul class="nav justify-content-center py-3">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="about.html" aria-current="page">About
+          <span class="visually-hidden">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blogs.html">Blogs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacts.html">Contacts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link linkLogin" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+        <a class="nav-link linkLogout" href="#" style="display: none;">Logout</a>
+      </li>
+    </ul>
+
+    <p class="text-white-50">Copyright &copy; 2025 by Nguyễn Thuỳ Trang - 20810026</p>
+  </footer>
+
+  <div class="modal fade" id="modalLogin" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitleId">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="#" method="post" id="formLogin">
+            <h3 class="text-center mb-4">Login Form</h3>
+
+            <div class="mb-3">
+              <input type="text" name="username" id="username" placeholder="Username" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="password" name="password" id="password" placeholder="Password" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+
+        <div class="modal-footer justify-content-center">
+          <div class="text-danger" id="errorMessage"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+
+  <script>
+    const modalLoginElement = document.getElementById("modalLogin");
+    if (modalLoginElement) {
+      if (!bootstrap.Modal.getInstance(modalLoginElement)) {
+        new bootstrap.Modal(modalLoginElement);
+      }
+    }
+  </script>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.runtime.min.js"
+    integrity="sha512-WUaZk9J3oknQdKPT2wAfA0gEBG2371l1ACjiynLA/X28p07n1u59VFk7q1i83/bo7N9rqVdYKlnvwAAiwL36jQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/about.templates.min.js"></script>
+  <script src="js/20810026.min.js"></script> {/* This should contain the login/logout JS logic */}
+
+
+  <script>
+    function updateLoginLogoutLinksState() {
+      const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+      const loginLinks = document.querySelectorAll(".linkLogin");
+      const logoutLinks = document.querySelectorAll(".linkLogout");
+
+      if (isLoggedIn) {
+        loginLinks.forEach(link => link.style.display = "none");
+        logoutLinks.forEach(link => link.style.display = "inline");
+      } else {
+        loginLinks.forEach(link => link.style.display = "inline");
+        logoutLinks.forEach(link => link.style.display = "none");
+      }
+    }
+
+    async function handleUserLogin(event) {
+      event.preventDefault();
+      const usernameInput = document.getElementById("username");
+      const passwordInput = document.getElementById("password");
+      const username = usernameInput.value;
+      const password = passwordInput.value;
+
+      let loggedIn = false;
+      if (username === "admin" && password === "123456") {
+        loggedIn = true;
+      } else {
+        const registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+        const foundUser = registeredUsers.find(user => user.username === username && user.password === password);
+        if (foundUser) {
+          loggedIn = true;
+        }
+      }
+
+      if (loggedIn) {
+        localStorage.setItem('isLoggedIn', 'true');
+        const modalElement = document.getElementById("modalLogin");
+        if (modalElement) {
+          const modal = bootstrap.Modal.getInstance(modalElement);
+          if (modal) {
+            modal.hide();
+          }
+          modalElement.addEventListener('hidden.bs.modal', function () {
+            if (usernameInput) usernameInput.value = '';
+            if (passwordInput) passwordInput.value = '';
+          }, { once: true });
+        }
+        location.reload();
+      } else {
+        alert("Invalid username or password. Please try again.");
+        if (passwordInput) {
+          passwordInput.value = '';
+        }
+      }
+    }
+
+    function handleUserLogout(event) {
+      event.preventDefault();
+      localStorage.removeItem('isLoggedIn');
+      location.reload();
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateLoginLogoutLinksState();
+
+      const loginForm = document.getElementById('formLogin');
+      if (loginForm) {
+        loginForm.addEventListener('submit', handleUserLogin);
+      }
+
+      const logoutLinks = document.querySelectorAll(".linkLogout");
+      logoutLinks.forEach(link => {
+        link.addEventListener('click', handleUserLogout);
+      });
+
+      // Consistent header search form handling
+      const headerSearchForm = document.getElementById('form-search');
+      const headerKeywordInput = document.getElementById('keyword');
+
+      if (headerSearchForm && headerKeywordInput) {
+        headerSearchForm.addEventListener('submit', function (event) {
+          event.preventDefault();
+          const keyword = headerKeywordInput.value.trim();
+          if (keyword) {
+            window.location.href = `search.html?keyword=${encodeURIComponent(keyword)}`;
+          } else {
+            window.location.href = 'search.html';
+          }
+        });
+      }
+
+      if (location.hash == '' || location.hash == "#") {
+        loadPage();
+      } else {
+        loadDetails(location.hash.substr(1), 'details-template', 'content');
+      }
+
+      function loadPage() {
+        document.getElementById('main').style.display = 'block';
+        document.getElementById('content').style.display = 'none';
+        loadData("aboutus", "about-us-template", "about-us");
+        loadData("visions", "our-vision-template", "our-vision");
+        loadData("testimonials", "testimonials-template", "testimonials");
+        loadData("team", "our-team-template", "our-team");
+        history.replaceState({ loadPage: 1 }, null, location.href);
+      }
+
+      async function loadDetails(request, templateId, viewId) {
+        document.getElementById('main').style.display = 'none';
+        document.getElementById('content').style.display = 'block';
+        await loadData(request, templateId, viewId);
+        history.replaceState({ request, templateId, viewId }, null, location.href);
+      }
+
+      window.onpopstate = (event) => {
+        let state = event.state;
+        if (state && state.loadPage) {
+          loadPage();
+        } else if (state && state.request) {
+          loadDetails(state.request, state.templateId, state.viewId);
+        }
+      };
+    });
+  </script>
+</body>
+
+</html>

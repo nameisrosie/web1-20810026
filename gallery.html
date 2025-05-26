@@ -1,0 +1,275 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>20810026 - Web1 Project</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/686ae184f2.js" crossorigin="anonymous"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/20810026.css" />
+</head>
+
+<body>
+  <header class="container">
+    <nav class="navbar navbar-expand-sm navbar-light" id="menu-header" role="navigation" aria-label="Main navigation">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Web1 Logo">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu-header"
+          aria-controls="menu-header" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-header">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html" aria-current="page">Home
+                <span class="visually-hidden">(current)</span></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="gallery.html">Gallery</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="blogs.html">Blogs</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="contacts.html">Contacts</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link linkLogin" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+              <a href="#" class="nav-link linkLogout" style="display:none;">Logout</a>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0 border rounded-pill header-search-form" id="form-search" method="GET" action="search.html">
+            <input class="form-control border-0 ms-3" type="text" placeholder="Search" name="keyword" id="keyword"
+              required />
+            <button class="btn my-2 my-sm-0" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <section class="container-fluid" id="banner"
+    style="background-image: url('images/bg-banner.gif'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+    <div class="container text-white text-center">
+      <div class="py-5">
+        <h1>Welcome to My Web Portfolio</h1>
+        <p class="lead my-3">Explore the projects and skills of Nguyễn Thuỳ Trang (20810026).</p>
+        <a href="gallery.html#gallery-categories"
+          class="btn btn-lg text-bold text-uppercase text-white rounded-4 px-4 border border-light border-2 me-2">
+          View Gallery
+        </a>
+      </div>
+  </section>
+  <section class="container py-5">
+    <h1>Gallery</h1>
+    <strong>Filter by category:</strong> <br>
+    <ul class="nav" id="gallery-categories">
+
+    </ul>
+    <div class="row py-3" id="gallery">
+
+    </div>
+  </section>
+
+  <main></main>
+  <footer class="text-center container-fluid text-white py-3" id="menu-footer">
+    <ul class="nav justify-content-center py-3">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html" aria-current="page">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="about.html">About</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link active" href="gallery.html">Gallery</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="blogs.html">Blogs</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="contacts.html">Contacts</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link linkLogin" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+        <a href="#" class="nav-link linkLogout" style="display:none;">Logout</a>
+      </li>
+    </ul>
+
+    <p class="text-white-50">Copyright &copy; 2025 by Nguyễn Thuỳ Trang - 20810026</p>
+  </footer>
+
+  <div class="modal fade" id="modalLogin" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false" role="dialog"
+    aria-labelledby="modalTitleId" aria-hidden="true">
+    <div class="modal-dialog" role="document">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="modalTitleId">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+
+        <div class="modal-body">
+          <form action="#" method="post" id="formLogin">
+            <h3 class="text-center mb-4">Login Form</h3>
+
+            <div class="mb-3">
+              <input type="text" name="username" id="username" placeholder="Username" class="form-control" required>
+            </div>
+
+            <div class="mb-3">
+              <input type="password" name="password" id="password" placeholder="Password" class="form-control" required>
+            </div>
+
+            <button type="submit" class="btn btn-primary w-100">Login</button>
+          </form>
+        </div>
+
+        <div class="modal-footer justify-content-center">
+          <div class="text-danger" id="errorMessage"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+    integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+    crossorigin="anonymous"></script>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/4.7.8/handlebars.runtime.min.js"
+    integrity="sha512-WUaZk9J3oknQdKPT2wAfA0gEBG2371l1ACjiynLA/X28p07n1u59VFk7q1i83/bo7N9rqVdYKlnvwAAiwL36jQ=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="js/gallery.templates.min.js"></script>
+  <script src="js/20810026.js"></script>
+
+  <script>
+    function updateLoginLogoutLinksState() {
+      const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+      const loginLinks = document.querySelectorAll(".linkLogin");
+      const logoutLinks = document.querySelectorAll(".linkLogout");
+
+      if (isLoggedIn) {
+        loginLinks.forEach(link => link.style.display = "none");
+        logoutLinks.forEach(link => link.style.display = "inline");
+      } else {
+        loginLinks.forEach(link => link.style.display = "inline");
+        logoutLinks.forEach(link => link.style.display = "none");
+      }
+    }
+
+    async function handleUserLogin(event) {
+      event.preventDefault();
+      const usernameInput = document.getElementById("username");
+      const passwordInput = document.getElementById("password");
+      const username = usernameInput.value;
+      const password = passwordInput.value;
+
+      let loggedIn = false;
+      if (username === "admin" && password === "123456") {
+        loggedIn = true;
+      } else {
+        const registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+        const foundUser = registeredUsers.find(user => user.username === username && user.password === password);
+        if (foundUser) {
+          loggedIn = true;
+        }
+      }
+
+      if (loggedIn) {
+        localStorage.setItem('isLoggedIn', 'true');
+        const modalElement = document.getElementById("modalLogin");
+        if (modalElement) {
+          const modal = bootstrap.Modal.getInstance(modalElement);
+          if (modal) {
+            modal.hide();
+          }
+          modalElement.addEventListener('hidden.bs.modal', function () {
+            if (usernameInput) usernameInput.value = '';
+            if (passwordInput) passwordInput.value = '';
+          }, { once: true });
+        }
+        location.reload();
+      } else {
+        alert("Invalid username or password. Please try again.");
+        if (passwordInput) {
+          passwordInput.value = '';
+        }
+      }
+    }
+
+    function handleUserLogout(event) {
+      event.preventDefault();
+      localStorage.removeItem('isLoggedIn');
+      location.reload();
+    }
+
+    function filterCategory(category, linkElement) {
+      let links = document.querySelectorAll('#gallery-categories .nav-link');
+      links.forEach(link => link.classList.remove('disabled', 'active'));
+      if (linkElement) {
+        linkElement.classList.add('disabled');
+      }
+
+      const requestPath = (category === 'All' || !category) ? 'gallery' : `gallery/category/${category}`;
+      if (typeof loadData === 'function') {
+        loadData(requestPath, 'gallery-template', 'gallery');
+      } else {
+        console.error('loadData function is not defined. Make sure 20810026.js is loaded and provides it.');
+      }
+    }
+
+    document.addEventListener('DOMContentLoaded', () => {
+      updateLoginLogoutLinksState();
+
+      const loginForm = document.getElementById('formLogin');
+      if (loginForm) {
+        loginForm.addEventListener('submit', handleUserLogin);
+      }
+
+      const logoutLinks = document.querySelectorAll(".linkLogout");
+      logoutLinks.forEach(link => {
+        link.addEventListener('click', handleUserLogout);
+      });
+
+      // Consistent header search form handling
+      const headerSearchForm = document.getElementById('form-search');
+      const headerKeywordInput = document.getElementById('keyword');
+
+      if (headerSearchForm && headerKeywordInput) {
+          headerSearchForm.addEventListener('submit', function(event) {
+              event.preventDefault();
+              const keyword = headerKeywordInput.value.trim();
+              if (keyword) {
+                  window.location.href = `search.html?keyword=${encodeURIComponent(keyword)}`;
+              } else {
+                  window.location.href = 'search.html';
+              }
+          });
+      }
+
+      if (typeof loadData === 'function') {
+        loadData('gallery-categories', 'gallery-categories-template', 'gallery-categories');
+        loadData('gallery', 'gallery-template', 'gallery');
+      } else {
+        console.error('loadData function is not defined. Gallery cannot be loaded.');
+      }
+    });
+  </script>
+</body>
+
+</html>

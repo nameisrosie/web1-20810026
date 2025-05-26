@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>20810026 - Web1 Project</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+
+  <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon">
+  <script src="https://kit.fontawesome.com/686ae184f2.js" crossorigin="anonymous"></script>
+
+  <link href="https://fonts.googleapis.com/css2?family=Changa+One:ital@0;1&display=swap" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" />
+
+  <link rel="stylesheet" href="css/20810026.css" />
+</head>
+
+<body>
+  <header class="container">
+    <nav class="navbar navbar-expand-sm navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="index.html">
+          <img src="images/logo.png" alt="Web1 Logo">
+        </a>
+        <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#menu-header"
+          aria-controls="menu-header" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="menu-header">
+          <ul class="navbar-nav ms-auto mt-2 mt-lg-0">
+            <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+            <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+            <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+            <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+            <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+            <li class="nav-item">
+              <a class="nav-link linkLogin" href="#" data-bs-toggle="modal" data-bs-target="#modalLogin">Login</a>
+              <a class="nav-link linkLogout" href="#" style="display: none;">Logout</a>
+            </li>
+          </ul>
+          <form class="d-flex my-2 my-lg-0 border rounded-pill header-search-form" id="form-search" method="GET" action="search.html">
+            <input class="form-control border-0 ms-3" type="text" placeholder="Search" name="keyword" id="keyword"
+              required />
+            <button class="btn my-2 my-sm-0" type="submit">
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </nav>
+  </header>
+
+  <div id="content">
+    <section class="container-fluid" id="banner">
+      <div class="container text-white text-center">
+        <div id="carousel-banner" class="carousel slide" data-bs-ride="carousel">
+          <ol class="carousel-indicators">
+            <button data-bs-target="#carousel-banner" data-bs-slide-to="0" class="active"></button>
+            <button data-bs-target="#carousel-banner" data-bs-slide-to="1"></button>
+            <button data-bs-target="#carousel-banner" data-bs-slide-to="2"></button>
+          </ol>
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <h1>Web Development <br> for Everyone</h1>
+            </div>
+            <div class="carousel-item">
+              <h1>20810026 <br> Nguyen Thuy Trang</h1>
+            </div>
+            <div class="carousel-item">
+              <h1>Lap trinh web 1 <br> DTTX - HK2 - 2024-2025</h1>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5" id="products"></section>
+
+    <section class="container-fluid" id="aboutus">
+      <div class="container">
+        <div class="row py-5">
+          <div class="col-lg-9 col-md-8 col-sm-12 text-black-50">
+            <h1 class="text-white">About Us</h1>
+            <img class="float-start me-3" src="images/icon-about.png" alt="About us">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit...</p>
+            <p>More content here...
+              <a href="about.html" class="btn btn-link readmore p-0">Read more</a>
+            </p>
+          </div>
+          <div class="col-lg-3 col-md-4 col-sm-12">
+            <form id="formSignUp" class="border border-3 rounded-4 border-dark p-3">
+              <h3 class="text-center text-white">Newsletter Sign Up</h3>
+              <p class="text-black-50">Please, write an e-mail:</p>
+              <input type="email" name="email-signup" class="form-control mb-2" required>
+              <button type="submit" class="btn btn-dark float-end text-uppercase rounded-4 px-4">Sign
+                up</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="container py-5" id="news">
+      <h1 class="text-black-10">News</h1>
+    </section>
+  </div>
+
+  <footer class="text-center container-fluid text-white py-3" id="menu-footer">
+    <ul class="nav justify-content-center py-3">
+      <li class="nav-item"><a class="nav-link active" href="index.html">Home</a></li>
+      <li class="nav-item"><a class="nav-link" href="about.html">About</a></li>
+      <li class="nav-item"><a class="nav-link" href="gallery.html">Gallery</a></li>
+      <li class="nav-item"><a class="nav-link" href="blogs.html">Blogs</a></li>
+      <li class="nav-item"><a class="nav-link" href="contacts.html">Contacts</a></li>
+    </ul>
+    <p class="text-white-50">Copyright &copy; 2025 by Nguyễn Thuỳ Trang - 20810026</p>
+  </footer>
+
+  <div class="modal fade" id="modalLogin" tabindex="-1" aria-labelledby="modalLoginLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow-lg">
+        <div class="modal-header border-0 justify-content-center">
+          <h5 class="modal-title" id="modalLoginLabel">Login to Your Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="formLogin" method="POST" action="verify.php">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" name="username" id="username" placeholder="Username" required>
+              <label for="username"><i class="fa-solid fa-user me-2"></i>Username</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="password" class="form-control" name="password" id="password" placeholder="Password" required>
+              <label for="password"><i class="fa-solid fa-lock me-2"></i>Password</label>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill">Login</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <small class="text-muted">Don't have an account? <a href="#" class="text-decoration-none"
+              data-bs-toggle="modal" data-bs-target="#modalSignUp" data-bs-dismiss="modal">Sign Up</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Sign Up Modal -->
+  <div class="modal fade" id="modalSignUp" tabindex="-1" aria-labelledby="modalSignUpLabel" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content rounded-4 shadow-lg">
+        <div class="modal-header border-0 justify-content-center">
+          <h5 class="modal-title" id="modalSignUpLabel">Create Your Account</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body p-4">
+          <form id="formAccountRegistration">
+            <div class="form-floating mb-3">
+              <input type="text" class="form-control" id="signUpUsername" name="signUpUsername" placeholder="Username"
+                required>
+              <label for="signUpUsername"><i class="fa-solid fa-user me-2"></i>Username</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="email" class="form-control" id="signUpEmail" name="signUpEmail"
+                placeholder="name@example.com" required>
+              <label for="signUpEmail"><i class="fa-solid fa-envelope me-2"></i>Email address</label>
+            </div>
+            <div class="form-floating mb-3">
+              <input type="password" class="form-control" id="signUpPassword" name="signUpPassword"
+                placeholder="Password" required>
+              <label for="signUpPassword"><i class="fa-solid fa-lock me-2"></i>Password</label>
+            </div>
+            <div class="form-floating mb-4">
+              <input type="password" class="form-control" id="signUpConfirmPassword" name="signUpConfirmPassword"
+                placeholder="Confirm Password" required>
+              <label for="signUpConfirmPassword"><i class="fa-solid fa-lock me-2"></i>Confirm Password</label>
+            </div>
+            <div class="d-grid">
+              <button type="submit" class="btn btn-primary btn-lg rounded-pill">Sign Up</button>
+            </div>
+          </form>
+        </div>
+        <div class="modal-footer border-0 justify-content-center">
+          <small class="text-muted">Already have an account? <a href="#" class="text-decoration-none"
+              data-bs-toggle="modal" data-bs-target="#modalLogin" data-bs-dismiss="modal">Login</a></small>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <style>
+    .modal-content {
+      background: #ffffff;
+    }
+
+    .form-floating .form-control:focus~label {
+      color: #0d6efd;
+    }
+
+    .form-floating label {
+      color: #6c757d;
+    }
+
+    .btn-primary {
+      background-image: linear-gradient(135deg, #0062E6 0%, #33AEFF 100%);
+      border: none;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+
+  <script>
+    function updateLoginLogoutLinksState() {
+      const isLoggedIn = localStorage.getItem('isLoggedIn') === 'true';
+      const loginLink = document.querySelector(".linkLogin");
+      const logoutLink = document.querySelector(".linkLogout");
+
+      if (loginLink && logoutLink) {
+        if (isLoggedIn) {
+          loginLink.style.display = "none";
+          logoutLink.style.display = "inline";
+        } else {
+          loginLink.style.display = "inline";
+          logoutLink.style.display = "none";
+        }
+      }
+    }
+
+    async function handleUserLogin(event) {
+      event.preventDefault();
+      const usernameInput = document.getElementById("username");
+      const passwordInput = document.getElementById("password");
+      const username = usernameInput.value;
+      const password = passwordInput.value;
+
+      // Check hardcoded admin credentials first
+      let loggedIn = false;
+      if (username === "admin" && password === "123456") {
+        loggedIn = true;
+      } else {
+        const registeredUsers = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+        const foundUser = registeredUsers.find(user => user.username === username && user.password === password);
+        if (foundUser) {
+          loggedIn = true;
+        }
+      }
+
+      if (loggedIn) {
+        localStorage.setItem('isLoggedIn', 'true');
+        const modalElement = document.getElementById("modalLogin");
+        if (modalElement) {
+          const modal = bootstrap.Modal.getInstance(modalElement);
+          if (modal) {
+            modal.hide();
+          }
+          // Listener to clear form after modal is hidden
+          modalElement.addEventListener('hidden.bs.modal', function () {
+            if (usernameInput) usernameInput.value = '';
+            if (passwordInput) passwordInput.value = '';
+          }, { once: true });
+        }
+        location.reload(); // Reload to reflect changes
+      } else {
+        alert("Invalid username or password. Please try again.");
+        if (passwordInput) {
+          passwordInput.value = '';
+        }
+      }
+    }
+
+    function handleUserLogout(event) {
+      event.preventDefault();
+      localStorage.removeItem('isLoggedIn');
+      location.reload();
+    }
+
+    async function handleAccountRegistration(event) {
+      event.preventDefault();
+      const usernameInput = document.getElementById("signUpUsername");
+      const emailInput = document.getElementById("signUpEmail");
+      const passwordInput = document.getElementById("signUpPassword");
+      const confirmPasswordInput = document.getElementById("signUpConfirmPassword");
+
+      const username = usernameInput.value.trim();
+      const email = emailInput.value.trim();
+      const password = passwordInput.value;
+      const confirmPassword = confirmPasswordInput.value;
+
+      if (!username || !email || !password || !confirmPassword) {
+        alert("Please fill in all fields.");
+        return;
+      }
+
+      if (password !== confirmPassword) {
+        alert("Passwords do not match. Please try again.");
+        passwordInput.value = '';
+        confirmPasswordInput.value = '';
+        passwordInput.focus();
+        return;
+      }
+
+      let users = JSON.parse(localStorage.getItem('registeredUsers')) || [];
+
+      const existingUser = users.find(user => user.username === username);
+      if (existingUser) {
+        alert("Username already exists. Please choose a different one.");
+        usernameInput.focus();
+        return;
+      }
+
+      users.push({ username, email, password });
+      localStorage.setItem('registeredUsers', JSON.stringify(users));
+
+      alert(`Account for ${username} created successfully! You can now try logging in.`);
+
+      const modalElement = document.getElementById("modalSignUp");
+      if (modalElement) {
+        const modal = bootstrap.Modal.getInstance(modalElement);
+        if (modal) {
+          modal.hide();
+        }
+        modalElement.addEventListener('hidden.bs.modal', function () {
+          if (usernameInput) usernameInput.value = '';
+          if (emailInput) emailInput.value = '';
+          if (passwordInput) passwordInput.value = '';
+          if (confirmPasswordInput) confirmPasswordInput.value = '';
+        }, { once: true });
+      }
+    }
+    document.addEventListener('DOMContentLoaded', () => {
+      updateLoginLogoutLinksState();
+
+      const loginForm = document.getElementById('formLogin');
+      if (loginForm) {
+        loginForm.addEventListener('submit', handleUserLogin);
+      }
+
+      const logoutLink = document.querySelector(".linkLogout");
+      if (logoutLink) {
+        logoutLink.addEventListener('click', handleUserLogout);
+      }
+
+      const registrationForm = document.getElementById('formAccountRegistration');
+      if (registrationForm) {
+        registrationForm.addEventListener('submit', handleAccountRegistration);
+      }
+
+      const formSignUp = document.getElementById("formSignUp");
+      if (formSignUp) {
+        formSignUp.addEventListener("submit", function (event) {
+          event.preventDefault();
+          alert("Thank you for signing up!");
+          const emailInput = formSignUp.querySelector('input[name="email-signup"]');
+          if (emailInput) emailInput.value = '';
+        });
+      }
+
+      const formSearch = document.getElementById("form-search");
+      const keywordInputForHeader = document.getElementById("keyword"); // Assuming 'keyword' is the id of header search input
+
+      if (formSearch && keywordInputForHeader) {
+        formSearch.addEventListener("submit", function (event) {
+          event.preventDefault();
+          const keyword = keywordInputForHeader.value.trim();
+          if (keyword) {
+            window.location.href = `search.html?keyword=${encodeURIComponent(keyword)}`;
+          } else {
+            window.location.href = 'search.html'; // Navigate to search page even if keyword is empty
+          }
+        });
+      }
+    });
+  </script>
+</body>
+
+</html>
